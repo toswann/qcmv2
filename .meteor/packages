@@ -8,3 +8,7 @@ autopublish
 insecure
 less
 less-bootstrap-3
+iron-router
+accounts-password
+accounts-base
+coffeescript

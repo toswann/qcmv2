@@ -1,0 +1,16 @@
+<template name="formErrors">
+    {{#if hasErrors}}
+    <div class="form-errors alert alert-danger">
+        <ul>
+        {{#each errors}}
+            {{> formError}}
+        {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+</template>
+
+<template name="formError">
+    <li>{{message}}</li>
+</template>
+

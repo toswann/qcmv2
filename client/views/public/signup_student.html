@@ -1,0 +1,25 @@
+<template name="signupStudent">
+    <div class="">
+        <h2>Inscription Eleve</h2>
+        {{> formErrors}}
+        <div>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <input class="form-control" id="email" type="email" value="" />
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input class="form-control" id="password" type="password" value="" />
+                </div>
+                <div class="form-group">
+                    <label for="password-confirmation">Confirmez votre mot de passe</label>
+                    <input class="form-control" id="password-confirmation" type="password" value="" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Inscription</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>

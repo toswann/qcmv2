@@ -21,6 +21,15 @@ Template.login.events({
             }
             else {
                 console.log("login OK");
+                if (Router.current().route.name === 'login') {
+                    // if we are on the login route, we want to redirect the user
+                    var user = Meteor.user();
+                    if (user.profile.type == D.TYPE.EXTERN_STUDENT)
+                        return Router.go('studentDashboard');
+                    else if (user.profile.type == D.TYPE.INSTRUCTOR)
+                        return Router.go('instructorDashboard');
+
+                }
             }
         });
     }

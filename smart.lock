@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "less-bootstrap-3": {},
-      "iron-router": {}
+      "iron-router": {},
+      "stripe": {}
     },
     "packages": {
       "less-bootstrap-3": {
@@ -15,6 +16,11 @@
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.7.1",
         "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
+      },
+      "stripe": {
+        "git": "https://github.com/appleifreak/stripe-meteor.git",
+        "tag": "v1.5.4",
+        "commit": "eb383bd755109d59f2b3446bb53016a6028ea5c8"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

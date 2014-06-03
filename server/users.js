@@ -12,7 +12,7 @@ Accounts.onCreateUser(function(options, user){
         user.profile.email = options.email;
 
     if (options.profile.type == D.TYPE.EXTERN_STUDENT) {
-        user.profile.state = D.STATE.STUDENT.NO_LICENCE;
+        user.profile.state = D.STATE.EXT_STUDENT_TRIAL;
     }
     else if (options.profile.type == D.TYPE.ORGA_STUDENT) {
 

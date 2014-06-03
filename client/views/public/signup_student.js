@@ -13,7 +13,7 @@ Template.signupStudent.events({
         // clear previous FormErrors before validating the form
         clearFormErrors();
 
-        var email = $('#email').val();
+        var email = $('#email').val().toLowerCase();
         var password = $('#password').val();
         var passwordconfirmation = $('#password-confirmation').val();
         if(!email || !password || !passwordconfirmation){

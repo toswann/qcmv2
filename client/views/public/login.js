@@ -21,6 +21,10 @@ Template.login.events({
             }
             else {
                 console.log("login OK");
+
+                Stripe.setPublishableKey('pk_test_fPW5TkcXmsyDAmWlsTLmNPRp');
+
+                console.log("Stripe.setPublishableKey");
                 if (Router.current().route.name === 'login') {
                     // if we are on the login route, we want to redirect the user
                     var user = Meteor.user();

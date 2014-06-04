@@ -11,14 +11,14 @@ Accounts.onCreateUser(function(options, user){
     if (options.email)
         user.profile.email = options.email;
 
-    if (options.profile.type == D.TYPE.EXTERN_STUDENT) {
+    if (options.profile.type == D.TYPE.EXT_STUDENT) {
         user.profile.state = D.STATE.EXT_STUDENT_TRIAL;
     }
-    else if (options.profile.type == D.TYPE.ORGA_STUDENT) {
+    else if (options.profile.type == D.TYPE.ORG_STUDENT) {
 
     }
     else if (options.profile.type == D.TYPE.INSTRUCTOR) {
-
+        user.profile.state = D.STATE.INSTRUCTOR_TRIAL;
     }
     else if (options.profile.type == D.TYPE.ADMIN) {
 
